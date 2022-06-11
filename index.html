@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1>My first attempt for a Survey Form!</h1>
+    <form action="/infos" class="col-sm-12">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="Enter email here" required>
+
+        <label for="age">Choose your age:</label>
+        <select id="age" name="age">
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="35-55">35-55</option>
+            <option value="greater than 55">older than 55</option>
+        </select>
+        <div>
+            <label for="Gender">Gender:</label>
+
+            <input id="field" type="radio" name="gender" value="male" checked> Male<br>
+            <input id="field" type="radio" name="gender" value="female"> Female<br>
+            <input id="field" type="radio" name="gender" value="other"> Other
+
+        </div>
+
+        <label for="ran">How much do you like this form (between 0 and 10):</label>
+        <input type="range" id="ran" name="ran" min="0" max="10">
+
+        <fieldset>
+            <label for="Ckeck">What would you like to change or improve on this form?</label>
+
+            <input id="field" type="checkbox" name="images" value="images"> Better Images<br>
+            <input id="field" type="checkbox" name="structure" value="structure"> Better Structure<br>
+            <input id="field" type="checkbox" name="color" value="color"> Different Colors<br>
+            <input id="field" type="checkbox" name="font" value="font" checked>Alter Fonts <br>
+
+        </fieldset>
+        <label for="text">Any comments?</label>
+        <textarea id="text" name="user_message" rows="8" cols="25" placeholder="Enter Text Here"></textarea>
+        <div id="submitbutton">
+            <button type="submit" id="submit">Submit your application</button>  
+        </div>
+    </form>
+    
+</body>
+</html>
